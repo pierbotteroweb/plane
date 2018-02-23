@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+margin:0px;
+}
+.painel{
+width:100%;
+height:1120px;
+text-align: center;
+border: solid black 10px;
+}
+
+
+#azul{
+background:url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(ceu-vert.jpg);
+background-repeat:no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+background-size:
+
+50px auto,
+150px auto,
+250px auto,
+350px auto,
+450px auto,
+550px auto,
+50px auto,
+150px auto,
+250px auto,
+350px auto,
+450px auto,
+550px auto,
+
+
+100% 2460px;
+position: relative;
+}
+
+
+</style>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script>
+$(document).ready(function(){
+	$window = $(window);
+    $('div[data-type="background"]').each(function(){
+        var $bgobj = $(this);
+    
+        $(window).scroll(function() {
+            var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+            var yPosB = (yPos*0.5)+1100; 
+            var yPosC = (yPos*1.5)+2100; 
+            var yPosD = (yPos*2.5)+2100; 
+            var yPosE = (yPos*3.5)+4500;
+            var yPosF = (yPos*4.5)+2100;
+            var yPosG = (yPos*5.5)+4200;
+            var yPosH = (yPos*0.5)+800; 
+            var yPosI = (yPos*1.5)+200; 
+            var yPosJ = (yPos*2.5)+800; 
+            var yPosK = (yPos*3.5)+300;
+            var yPosL = (yPos*4.5)+600;
+            var yPosM = (yPos*5.5)+1900;      
+            
+            var coords = 
+            '50% '+ yPosB + 'px,'+
+            '20% '+ yPosC + 'px,'+
+            '30% '+ yPosD + 'px,'+
+            '70% '+ yPosE + 'px,'+
+            '85% '+ yPosF + 'px,'+
+            '120% '+ yPosG + 'px,'+
+            '5% '+ yPosH + 'px,'+
+            '20% '+ yPosI + 'px,'+
+            '80% '+ yPosJ + 'px,'+
+            '90% '+ yPosK + 'px,'+
+            '30% '+ yPosL + 'px,'+
+            '30% '+ yPosM + 'px,'+
+            '50% '+ yPos + 'px';
+
+            $bgobj.css({ backgroundPosition: coords });
+        }); 
+    });    
+});
+</script>
+</head>
+<body>
+<div class="painel" id="azul" data-type="background" data-speed="0.3">
+</div>
+
+</body>
+</html>
