@@ -1,0 +1,82 @@
+
+body{
+margin:0px;
+}
+.painel{
+width:100%;
+height:1120px;
+text-align: center;
+border: solid black 10px;
+}
+
+
+#azul{
+background:
+url(plane.png),
+url(plane.png),
+url(plane.png),
+url(plane.png),
+url(plane.png),
+url(plane.png),
+url(plane.png),
+url(plane.png),
+url(plane.png),
+url(plane.png),
+url(plane.png),
+url(plane.png),
+url(ceu-vert.jpg);
+
+background-repeat:
+no-repeat,
+no-repeat,
+no-repeat,
+no-repeat,
+no-repeat,
+no-repeat,
+no-repeat,
+no-repeat,
+no-repeat,
+no-repeat,
+no-repeat,
+no-repeat,
+repeat;
+
+
+background-size:
+
+50px auto,
+150px auto,
+250px auto,
+350px auto,
+450px auto,
+550px auto,
+50px auto,
+150px auto,
+250px auto,
+450px auto,
+350px auto,
+550px auto,
+
+
+100% 2460px;
+
+background-position: 
+
+
+ 48% 1100px,
+ 20% 2100px,
+ 30% 2100px,
+ 70% 4500px,
+ 85% 2100px,
+ 120% 4200px,
+ 5% 800px,
+ 20% 200px,
+ 80% 800px,
+ 90% 300px,
+ 30% 600px,
+ 30% 1900px,
+ 50% 0px;
+
+position: relative;
+}
+

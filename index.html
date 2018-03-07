@@ -1,43 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body{
-margin:0px;
-}
-.painel{
-width:100%;
-height:1120px;
-text-align: center;
-border: solid black 10px;
-}
-
-
-#azul{
-background:url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(plane.png),url(ceu-vert.jpg);
-background-repeat:no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
-background-size:
-
-50px auto,
-150px auto,
-250px auto,
-350px auto,
-450px auto,
-550px auto,
-50px auto,
-150px auto,
-250px auto,
-350px auto,
-450px auto,
-550px auto,
-
-
-100% 2460px;
-position: relative;
-}
-
-
-</style>
+<link rel="stylesheet" type="text/css" href="main.css">
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -56,12 +20,12 @@ $(document).ready(function(){
             var yPosH = (yPos*0.5)+800; 
             var yPosI = (yPos*1.5)+200; 
             var yPosJ = (yPos*2.5)+800; 
-            var yPosK = (yPos*3.5)+300;
+            var yPosK = (yPos*4.5)+300;
             var yPosL = (yPos*4.5)+600;
             var yPosM = (yPos*5.5)+1900;      
             
             var coords = 
-            '50% '+ yPosB + 'px,'+
+            '48% '+ yPosB + 'px,'+
             '20% '+ yPosC + 'px,'+
             '30% '+ yPosD + 'px,'+
             '70% '+ yPosE + 'px,'+
@@ -70,8 +34,8 @@ $(document).ready(function(){
             '5% '+ yPosH + 'px,'+
             '20% '+ yPosI + 'px,'+
             '80% '+ yPosJ + 'px,'+
-            '90% '+ yPosK + 'px,'+
-            '30% '+ yPosL + 'px,'+
+            '100% '+ yPosK + 'px,'+
+            '50% '+ yPosL + 'px,'+
             '30% '+ yPosM + 'px,'+
             '50% '+ yPos + 'px';
 
